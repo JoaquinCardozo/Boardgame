@@ -66,3 +66,36 @@ body {
 	left: 20px;
 	top: 20px;
 }
+
+/* PlayersButtons.css */
+
+.players-buttons {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; /* Alinea los botones en una columna */
+  align-items: flex-start; /* Alinea los botones a la izquierda */
+  width: 100px; /* Ajusta el ancho según tus necesidades */
+}
+
+.player-button {
+  margin-bottom: 10px; /* Agrega un margen inferior entre los botones */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.player-button.selected {
+  border: 10px solid yellow; /* Puedes ajustar el color y grosor del borde según tus preferencias */
+}
+
+/* Agrega estilos individuales para cada jugador */
+.player-button.player-1 { background-color: DeepSkyBlue; color: white; }
+.player-button.player-2 { background-color: LawnGreen; color: white; }
+.player-button.player-3 { background-color: Violet; color: white; }
+/* Puedes seguir agregando estilos para más jugadores si es necesario */
